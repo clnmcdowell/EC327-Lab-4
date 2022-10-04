@@ -1,0 +1,5 @@
+#ifndef FUNCTION_H
+#define FUNCTION_H
+long choose(long n, long r);
+long fact(long num);
+#endif

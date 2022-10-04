@@ -3,9 +3,9 @@
 
 using namespace std;
 
-long long fact(long long num){
-  long long result = 1;
-  while(num != 0){
+unsigned long long fact(unsigned long long num, unsigned long long denom){
+  unsigned long long result = 1;
+  while(num != denom){
     result *=  num;
     --num;
   }
@@ -13,9 +13,9 @@ long long fact(long long num){
   return result;
 }
 
-long long choose(long long n, long long r){
-  long long result;
-  result = fact(n)/(fact(r) * fact((n - r)));
+unsigned long long choose(unsigned long long n, unsigned long long r){
+  unsigned long long result, no =1;
+  result = fact(n,r)/fact((n - r), no);
    
   return result;
 }

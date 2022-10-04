@@ -1,0 +1,22 @@
+#include "countHeads.h"
+#include <iostream>
+
+using namespace std;
+
+long fact(long num){
+  long result = 1;
+  while(num != 0){
+    result *=  num;
+    --num;
+  }
+
+  return result;
+}
+
+long choose(long n, long r){
+  long result;
+  result = fact(n)/(fact(r) * fact((n - r)));
+   
+  return result;
+}
+

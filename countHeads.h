@@ -1,5 +1,5 @@
 #ifndef FUNCTION_H
 #define FUNCTION_H
-long long choose(long long n, long long r);
-long long fact(long long num);
+unsigned long long choose(unsigned long long n, unsigned long long r);
+unsigned long long fact(unsigned long long num, unsigned long long denom);
 #endif

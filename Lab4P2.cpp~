@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){
   bool repeat;
-  unsigned long long coins, heads, ways;
+  long coins, heads, ways;
   char select;
   
   do{
@@ -15,7 +15,7 @@ int main(){
     cout << "How many heads do you want?: ";
     cin >> heads;
     ways = choose(coins, heads);
-    cout << "Flipping " << coins << " coins, we can get " << heads << " heads " << ways << " ways.\n";
+    cout << "Flipping " << coins << " coins, we can get " << heads << " heads " << ways << " ways.";
     cout << "Flip again? (y/n): ";
     cin >> select;
     if(select == 'y')
